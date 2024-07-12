@@ -33,7 +33,7 @@
   }
 
   .accordion.active, .accordion:hover {
-    background: #444;
+    background: #e67315;
   }
   
  .panel {
