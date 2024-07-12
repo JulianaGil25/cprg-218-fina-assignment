@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles/reset.css" />
     <link rel="stylesheet" type="text/css" href="styles/accordio.css" />
     <link rel="stylesheet" type="text/css" href="styles/card.css" />
     <link rel="stylesheet" type="text/css" href="styles/content.css" />
@@ -75,40 +76,46 @@
         <h1> Healthy Snacks </h1>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/8NwGT2Pb7_E?si=xqIxxrtTXLIdJgRu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </section>
-      <section>
+      <section class="recommendations">
         <h2>Recommendations</h2>
+        <div class="accordion-contents">
+        
+          <div class="accordion-box">
+            <button class="accordion">Breakfast</button>
+            <div class="panel">
+              <p>For a balanced and nutritious breakfast, consider incorporating a mix of whole grains, lean proteins, healthy fats, and fresh fruits or vegetables. Options like oatmeal topped with berries and a handful of nuts, whole grain toast with avocado and a poached egg, or a smoothie made with spinach, banana, and Greek yogurt provide essential nutrients and sustained energy to start your day. Remember to stay hydrated with a glass of water or herbal tea. This combination helps maintain stable blood sugar levels, supports metabolic functions, and keeps you feeling full and focused throughout the morning.</p>
+            </div>
+          </div>
+          <div class="accordion-box">
+            <button class="accordion">Lunch</button>
+            <div class="panel">
+              <p>For a healthy and satisfying lunch, consider a vibrant quinoa and kale salad. Packed with protein and fiber, quinoa pairs perfectly with the nutrient-dense kale. Add cherry tomatoes, cucumber, and avocado for a refreshing crunch, and toss in some chickpeas for extra protein. Drizzle with olive oil and lemon juice, and season with salt and pepper. This salad is not only delicious but also easy to prepare and full of vitamins, minerals, and healthy fats, making it a perfect choice for a nutritious midday meal.</p>
+            </div>
+          </div>
+          <div class="accordion-box">
+            <button class="accordion">Dinner</button>
+            <div class="panel">
+              <p>For a healthy and satisfying dinner, aim for a balance of lean proteins, complex carbohydrates, and plenty of vegetables. Grilled or baked fish, such as salmon or tilapia, paired with a quinoa or brown rice pilaf and a side of steamed or roasted vegetables like broccoli, asparagus, or bell peppers makes for a nutritious meal. You can also consider a hearty salad with mixed greens, cherry tomatoes, cucumbers, lean grilled chicken or tofu, and a light vinaigrette. Incorporating healthy fats, like those found in avocado or olive oil, can enhance the meal’s flavor and nutritional profile. This combination supports a balanced diet, aids digestion, and promotes restful sleep.</p>
+            </div>
+          </div>
 
-<button class="accordion">Breakfast</button>
-<div class="panel">
-  <p>For a balanced and nutritious breakfast, consider incorporating a mix of whole grains, lean proteins, healthy fats, and fresh fruits or vegetables. Options like oatmeal topped with berries and a handful of nuts, whole grain toast with avocado and a poached egg, or a smoothie made with spinach, banana, and Greek yogurt provide essential nutrients and sustained energy to start your day. Remember to stay hydrated with a glass of water or herbal tea. This combination helps maintain stable blood sugar levels, supports metabolic functions, and keeps you feeling full and focused throughout the morning.</p>
-</div>
+        </div>
 
-<button class="accordion">Lunch</button>
-<div class="panel">
-  <p>For a healthy and satisfying lunch, consider a vibrant quinoa and kale salad. Packed with protein and fiber, quinoa pairs perfectly with the nutrient-dense kale. Add cherry tomatoes, cucumber, and avocado for a refreshing crunch, and toss in some chickpeas for extra protein. Drizzle with olive oil and lemon juice, and season with salt and pepper. This salad is not only delicious but also easy to prepare and full of vitamins, minerals, and healthy fats, making it a perfect choice for a nutritious midday meal.</p>
-</div>
-
-<button class="accordion">Dinner</button>
-<div class="panel">
-  <p>For a healthy and satisfying dinner, aim for a balance of lean proteins, complex carbohydrates, and plenty of vegetables. Grilled or baked fish, such as salmon or tilapia, paired with a quinoa or brown rice pilaf and a side of steamed or roasted vegetables like broccoli, asparagus, or bell peppers makes for a nutritious meal. You can also consider a hearty salad with mixed greens, cherry tomatoes, cucumbers, lean grilled chicken or tofu, and a light vinaigrette. Incorporating healthy fats, like those found in avocado or olive oil, can enhance the meal’s flavor and nutritional profile. This combination supports a balanced diet, aids digestion, and promotes restful sleep.</p>
-</div>
-
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
-</script>
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
       </section>
       <section>
         <div class="source image">
@@ -121,24 +128,16 @@ for (i = 0; i < acc.length; i++) {
         </div>
       </section>
     <footer class="footer">
-      <h1> BABY CARROT </h1>
+      <h1>BABY CARROT</h1>
       <div class="footer-content">
         <div class="social-media">
-          <img src="Images/apps.37935.9007199266245907.b029bd80-381a-4869-854f-bac6f359c5c9.png" alt="Facebook"
-          /></a>
-          <a href="#"
-            ><img src="Images/uDmdf69S_400x400.jpg" alt="Twitter"
-          /></a>
-          <a href="#"
-            ><img src="Images/pinterest-g47d7ec904_1280.png" alt="Pinterest"
-          /></a>
-          <a href="#"
-            ><img src="Images/Instagram_logo_2022.svg.png" alt="instagram"
-          /></a>
+          <a href="#"><img src="Images/apps.37935.9007199266245907.b029bd80-381a-4869-854f-bac6f359c5c9.png" alt="Facebook"/></a>
+          <a href="#"><img src="Images/uDmdf69S_400x400.jpg" alt="Twitter"/></a>
+          <a href="#"><img src="Images/pinterest-g47d7ec904_1280.png" alt="Pinterest"/></a>
+          <a href="#"><img src="Images/Instagram_logo_2022.svg.png" alt="instagram"/></a>
         </div>
         <div class="footer-info">
-          <p>&copy; 2024 by BABY CARROT.
-            Powered and secured by Wix</p>
+          <p>&copy; 2024 by BABY CARROT. All rights reserved.</p>
         </div>
       </div>
     </footer>
