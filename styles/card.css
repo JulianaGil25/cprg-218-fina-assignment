@@ -5,6 +5,10 @@
     font-family: sans-serif;
 }
 
+.our-team {
+    margin-top: 40px;
+}
+
 h2 {
     text-align: center;
     font-family:unset;
@@ -18,7 +22,7 @@ h2 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .card { 
